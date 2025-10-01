@@ -1,0 +1,12 @@
+[Unit]
+Description=Fetch the reading list from links.poxar.net
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+
+ExecStart=/usr/local/bin/linkding_web
+User=www
+Group=www
+WorkingDirectory=/srv/www.poxar.net
