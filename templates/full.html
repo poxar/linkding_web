@@ -1,0 +1,12 @@
+{% for item in items %}
+<li class=index-item>
+  <div class=index-title>
+    <a href="{{ item.url }}">{{ item.title }}</a>
+  </div>
+  {% if let Some(description) = item.description %}
+  <div class=index-description>
+    {{ description }}
+  </div>
+  {% endif %}
+</li>
+{% endfor %}

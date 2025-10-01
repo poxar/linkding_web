@@ -1,0 +1,9 @@
+[package]
+name = "linkding_web"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+rss = "2"
+askama = "0.14"
+reqwest = { version = "0.12", default-features = false, features = ["blocking", "rustls-tls"] }
