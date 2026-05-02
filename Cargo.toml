@@ -5,5 +5,5 @@ edition = "2024"
 
 [dependencies]
 rss = "2"
-askama = "0.14"
-reqwest = { version = "0.12", default-features = false, features = ["blocking", "rustls-tls"] }
+askama = "0.16"
+reqwest = { version = "0.13", default-features = false, features = ["blocking"] }
